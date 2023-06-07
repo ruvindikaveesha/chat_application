@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="532.0" style="-fx-background-color: linear-gradient(to right top, #1f13e0, #001ec5, #0021aa, #00228e, #002073, #002173, #002272, #002372, #01288c, #0e2ca7, #222fc2, #3730dc); -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <TextField fx:id="txtUserName" layoutX="62.0" layoutY="267.0" prefHeight="31.0" prefWidth="425.0" />
+      <Label layoutX="67.0" layoutY="239.0" prefHeight="21.0" prefWidth="173.0" text="Enter Your Name" textFill="#fff8f8">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="221.0" layoutY="323.0" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="39.0" prefWidth="95.0" style="-fx-background-color: linear-gradient(to right top, #162237, #172235, #192233, #1a2232, #1b2230);; -fx-background-radius: 20;" text="Log In" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="197.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/User_icon_2.svg.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

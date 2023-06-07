@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ctxClientForm" prefHeight="655.0" prefWidth="447.0" style="-fx-background-color: linear-gradient(to right top, #1f13e0, #001ec5, #0021aa, #00228e, #002073, #002173, #002272, #002372, #01288c, #0e2ca7, #222fc2, #3730dc);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClientFormController">
+   <children>
+      <AnchorPane prefHeight="76.0" prefWidth="477.0" style="-fx-background-color: linear-gradient(to right top, #1f13e0, #001ec5, #0021aa, #00228e, #002073, #002173, #002272, #002372, #01288c, #0e2ca7, #222fc2, #3730dc);;">
+         <children>
+            <ImageView fitHeight="52.0" fitWidth="45.0" layoutX="31.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/User%20img.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="55.0" layoutX="339.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/video-icon--.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="405.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assest/call%20img-.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblClientName" layoutX="94.0" layoutY="30.0" text="Client Name" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <TextField fx:id="txtMsgToSendArea" layoutX="7.0" layoutY="604.0" prefHeight="31.0" prefWidth="382.0" />
+      <ImageView fitHeight="26.0" fitWidth="35.0" layoutX="352.0" layoutY="607.0" onMouseClicked="#uploadImgMouseClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/camera.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="403.0" layoutY="604.0" mnemonicParsing="false" onAction="#btnSendMsgOnAction" style="-fx-background-color: linear-gradient(to right top, #4c7bb9, #3e69a8, #305798, #224687, #133576);;" text="Send" textFill="#fff6f6">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <ScrollPane layoutX="11.0" layoutY="84.0" prefHeight="507.0" prefWidth="455.0">
+         <content>
+            <VBox fx:id="vbox" prefHeight="500.0" prefWidth="449.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
